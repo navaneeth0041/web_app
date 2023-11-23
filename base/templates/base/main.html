@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title> To Do Items</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width-device-width,initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maiden+Orange&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@1&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            background-color:#FAFAFA;
+            font-family: 'Maiden Orange', serif;
+            padding-top:250px;
+
+
+        }
+        h1,h3={
+            font-family: 'Bevan', serif;
+
+        }
+
+        a,
+        p={
+            color:aqua;
+        }
+
+        .container{
+            max-width:550px;
+            margin:auto;
+            background-color:#fff;
+            -webkit-box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.21);
+            box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.21);
+            background:grey;
+
+
+
+        }
+        .header-bar{
+            display:flex;
+            justify-content:space-between;
+            color:#fff;
+            padding:10px;
+            border-radius:5px 5px 0 0;
+            {% comment %} background: linear-gradient(90deg, #EEA390 0%, #EB796F 43%, #EB796F 100%); {% endcomment %}
+        }
+
+
+        .header-bar a{
+            color:blue;
+            text-decoration: none;
+        }
+
+        .task-wrapper{
+            display:flex; 
+            align-items:center;
+            justify-content:space-between;
+            background-color:#fff;
+            padding:20px;
+            border-top: 1px solid grey;
+            font-size:25px;
+            font-weight:bold;
+        }
+        .task-tile{
+            display:flex;
+            align-items:center;
+        }
+        .task-title a{
+            text-decoration:none;
+            color:#4b5156;
+            margin-left:10px;
+        }
+        {% comment %} .task-complete-icon{
+            height:10px;
+            width:10px;
+            background-color:green;
+            border-radius:50%;
+        }
+        .task-incomplete-icon{
+            height:10px;
+            width:10px;
+            background-color:red;
+            border-radius:50%;
+        } {% endcomment %}
+
+        .delete-link{
+            text-decoration:none;
+            font-weight:900;
+            color: #cf4949;
+            font-size:20px;
+            line-height:0;
+            padding-left:450px;
+        }
+
+        #search-add-wrapper{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:15px;
+        }
+        #add-link{
+            color:black;
+            text-decoration:none;
+            font-size:20px;
+            text-shadow: 1px 1px black;
+        }
+
+        input[type=text],input[type=password],textarea{
+            border:1px solid black;
+            border-radius:10px;
+            padding:10px;
+            width:90%;
+        }
+        .button{
+            border: 1px solid black;
+            border-radius: 10px;
+            padding:10px;
+            background-color:white;
+            font-size:10px;
+            cursor:pointer;
+            text-decoration:none;
+        }
+        .edit-view{
+            padding:15px;
+            padding-left:25px;
+        }
+
+        .login{
+            align:center;
+            padding:20px;
+            margin-left:200px;
+            color:white;
+            font-size:20px;
+        }
+        #add-task{
+            font-size:80px;
+            text-decoration:none;
+            margin-bottom:10px;
+            color:black;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container"> 
+
+        {% block content %}
+
+
+        {% endblock content %}
+
+    </div>
+
+
+
+
+</body>
+</html> 
